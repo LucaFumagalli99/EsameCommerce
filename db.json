@@ -6,6 +6,13 @@
       "name": "Luca",
       "surname": "Fumagalli",
       "password": "123"
+    },
+    {
+      "username": "Gio",
+      "name": "Giorgio",
+      "surname": "Ripamonti",
+      "password": "ciao",
+      "id": 1
     }
   ],
   "products": [

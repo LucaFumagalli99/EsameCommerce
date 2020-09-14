@@ -7,3 +7,8 @@ export const getCurrentUser = createSelector(
     selectUsersState,
     (state: UsersState) => state.currentUser
 );
+
+export const selectErrorMessage = createSelector(
+    selectUsersState,
+    (state: UsersState) => state.errorMessage
+)
