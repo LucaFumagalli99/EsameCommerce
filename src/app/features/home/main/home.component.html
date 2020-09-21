@@ -1,1 +1,29 @@
-<p>home works!</p>
+<h1>ANIME STORE</h1>
+<ngb-carousel *ngIf="images">
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="/assets/img/Maglietta SAO immagine.jpg" alt="Random first slide">
+    </div>
+    <div class="carousel-caption">
+      <p style="color: black;">MAGLIETTE ANIME!</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="/assets/img/Felpa SAO.jpg" alt="Random second slide">
+    </div>
+    <div class="carousel-caption">
+      <p>FELPE ANIME!</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="/assets/img/Cappello SAO.jpg" alt="Random third slide">
+    </div>
+    <div class="carousel-caption">
+      <p style="color: black;">CAPPELLI ANIME!</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+<div class="container"><a class="btn" href="#">Gli anime</a></div>
+<!--json-server --watch db.json-->

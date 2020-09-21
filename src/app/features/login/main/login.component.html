@@ -1,8 +1,24 @@
-<form [formGroup]="loginForm" (ngSubmit)="doLogin()">
+<!--<form [formGroup]="loginForm" (ngSubmit)="doLogin()">
     <label for="fname">Username</label><br>
     <input formControlName="username"><br>
     <label for="lname">Password</label><br>
     <input formControlName="password"><br>
     <button type="submit">Login</button>
     <button routerLink="/register">Crea un account</button>
+</form>-->
+<body>
+<form [formGroup]="loginForm" (ngSubmit)="doLogin()">
+<div class="container" onclick="onclick">
+    <div class="top"></div>
+    <div class="bottom"></div>
+    <div class="center">
+      <h2>Accedi</h2>
+      <input placeholder='Username' formControlName="username"/>
+      <input placeholder='Password' formControlName="password" type="password"/>
+      <button type="submit">Login</button>
+      <a routerLink="/register">Non hai un account?Registrati qui!</a>
+      <h2>&nbsp;</h2>
+    </div>
+  </div>
 </form>
+</body>

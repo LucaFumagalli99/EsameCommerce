@@ -13,6 +13,48 @@
       "surname": "Ripamonti",
       "password": "ciao",
       "id": 1
+    },
+    {
+      "username": "Prova",
+      "name": "Bravo",
+      "surname": "1",
+      "password": "Prova",
+      "id": 2
+    },
+    {
+      "username": "Nico",
+      "name": "Nicolò",
+      "surname": "Borsa",
+      "password": "io",
+      "id": 3
+    },
+    {
+      "username": "Prova2",
+      "name": "P",
+      "surname": "P",
+      "password": "Prova2",
+      "id": 4
+    },
+    {
+      "username": "Prosciutto",
+      "name": "Maiale",
+      "surname": "Buono",
+      "password": "Prosciutto",
+      "id": 5
+    },
+    {
+      "username": "A",
+      "name": "A",
+      "surname": "A",
+      "password": "A",
+      "id": 6
+    },
+    {
+      "username": "B",
+      "name": "B",
+      "surname": "B",
+      "password": "B",
+      "id": 7
     }
   ],
   "products": [

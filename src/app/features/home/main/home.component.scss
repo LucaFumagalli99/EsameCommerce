@@ -1,0 +1,154 @@
+ngb-carousel {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+    height: 500px;
+    border-top: 50px solid rgb(182, 144, 214);
+    border-bottom: 50px solid rgb(182, 144, 214);
+    border-left: 40px solid  rgb(182, 144, 214);
+    border-right: 40px solid  rgb(182, 144, 214);
+    border-radius: 30px;
+}
+
+.bott {
+    text-align: center;
+    margin: 10px auto;
+}
+
+//menu
+.menu {
+    background: linear-gradient(90deg, rgba(239, 213, 255, 1) 0%, rgba(81, 90, 218, 1) 100%);
+    height: 260px;
+}
+
+.title {
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.strong {
+    font-weight: bolder;
+}
+
+.cart {
+    width: 150px;
+    position: absolute;
+    right: 3%;
+    top: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.icart {
+    height: 40px;
+    border: 0;
+}
+
+
+//Lato font
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+//color/ui color variables
+$white: #ececec;
+$black: #333333;
+$yellow: #1295bd;
+$purple: #8a19ff;
+$colorPrimary: $yellow;
+$colorSecondary: $purple;
+
+//split button mixin
+@mixin btn__split($colorLeft, $colorRight, $textColor) {
+	.btn {
+		position: relative;
+		letter-spacing: 0.25em;
+		margin: 0 auto;
+		padding: 1rem 2.5rem;
+		background: transparent;
+		outline: none;
+		font-size: 28px;
+		color: $textColor;
+
+		&::after,
+		&::before {
+			content: "";
+			position: absolute;
+			height: 100%;
+			width: 50%;
+			transform: skewX(30deg);
+			transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			z-index: -2;
+		}
+		&::before {
+			background-color: $colorLeft;
+			top: -1rem;
+			left: 0rem;
+		}
+		&::after {
+			background-color: $colorRight;
+			top: 1rem;
+			left: 8rem;
+		}
+		&:hover {
+			&::before,
+			&::after {
+				top: 0;
+				transform: skewx(0deg);
+			}
+			&::after {
+				left: 0rem;
+			}
+			&::before {
+				left: 8.75rem;
+			}
+		}
+	}
+}
+
+body,html{
+	height: 100%;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	color: $black;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+
+.container {
+	width: auto;
+    margin: auto;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 15px;
+}
+a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+@include btn__split($colorPrimary, $colorSecondary, $black);
