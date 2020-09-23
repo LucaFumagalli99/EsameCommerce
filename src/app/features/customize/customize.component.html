@@ -1,0 +1,17 @@
+<h1>ANIME STORE</h1>
+<div class="container" onclick="onclick">
+  <div class="top"></div>
+  <div class="bottom"></div>
+  <div class="center">
+    <h2>SCEGLI I NOSTRI PRODOTTI</h2><br>
+    <div class='input-fields'>
+      <label placeholder='Prezzo' class='input-line full-width' #prezzo>25€</label>
+      <input type='text' placeholder='TipoMerce' class='input-line full-width' #tipoMerce>
+      <input type='text' placeholder='Anime' class='input-line full-width' #Anime>
+     </div>
+    <div><button (click)="addToCart()" routerLink="/cart">Aggiungi al carrello</button></div>
+    <a routerLink="/home">Torna alla home</a>
+    <h2>&nbsp;</h2>
+  </div>
+</div>
+<!--json-server --watch db.json-->

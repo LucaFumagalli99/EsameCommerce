@@ -1,4 +1,13 @@
 {
+  "anime": [
+    [
+      "Maglietta SAO",
+      "Felpa Demon Slayer",
+      "Cappello SAO",
+      "Felpa Tokyo Ghoul"
+    ]
+  ],
+
   "users": [
     {
       "id": 0,
@@ -59,4 +68,5 @@
   ],
   "products": [
   ]
+      
 }
